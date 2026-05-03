@@ -117,7 +117,7 @@ O dashboard foi dividido em seis páginas principais.
 
 Visão geral de receita, pedidos, ticket médio, itens entregues, avaliação média, prazo médio, taxa de atraso e taxa de entrega.
 
-![Executive Overview](images/executive_overview.png)
+![Executive Overview](./images/executive_overview.png)
 
 ---
 
