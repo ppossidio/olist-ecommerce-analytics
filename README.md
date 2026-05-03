@@ -64,7 +64,7 @@ olist-ecommerce-analytics/
 │   └── final_insights.png
 │
 └── README.md
-
+```
 
 Etapas do Projeto
 1. Preparação dos Dados com Python
