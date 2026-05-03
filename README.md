@@ -149,7 +149,7 @@ Análise de clientes únicos, clientes recorrentes, distribuição das avaliaç�
 
 Análise de performance dos vendedores, concentração de receita, receita por estado do vendedor, taxa de atraso por seller e prazo médio de entrega por estado.
 
-![Sellers](https://github.com/ppossidio/olist-ecommerce-analytics/blob/1ccb3098af0aebf4583ceea256b29ac5b487e317/images/sellers.png)
+![Sellers](https://raw.githubusercontent.com/ppossidio/olist-ecommerce-analytics/refs/heads/main/images/sellers.png)
 
 ---
 
