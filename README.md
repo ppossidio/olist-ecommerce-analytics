@@ -117,7 +117,7 @@ O dashboard foi dividido em seis páginas principais.
 
 Visão geral de receita, pedidos, ticket médio, itens entregues, avaliação média, prazo médio, taxa de atraso e taxa de entrega.
 
-![Executive Overview](https://github.com/ppossidio/olist-ecommerce-analytics/blob/main/images/executive_overview.png) 
+![Executive Overview](https://github.com/ppossidio/olist-ecommerce-analytics/blob/1ccb3098af0aebf4583ceea256b29ac5b487e317/images/executive_overview.png) 
 
 ---
 
@@ -125,7 +125,7 @@ Visão geral de receita, pedidos, ticket médio, itens entregues, avaliação m�
 
 Análise de receita por categoria, produtos mais vendidos, preço médio, frete médio e participação do frete por categoria.
 
-![Sales & Products](https://github.com/ppossidio/olist-ecommerce-analytics/blob/main/images/sales_products.png)
+![Sales & Products](https://github.com/ppossidio/olist-ecommerce-analytics/blob/1ccb3098af0aebf4583ceea256b29ac5b487e317/images/sales_products.png)
 
 ---
 
@@ -133,7 +133,7 @@ Análise de receita por categoria, produtos mais vendidos, preço médio, frete 
 
 Análise de performance logística, incluindo prazo médio de entrega, pedidos atrasados, taxa de atraso por categoria e impacto da entrega na avaliação dos clientes.
 
-![Logistics](https://github.com/ppossidio/olist-ecommerce-analytics/blob/main/images/logistics.png)
+![Logistics](https://github.com/ppossidio/olist-ecommerce-analytics/blob/1ccb3098af0aebf4583ceea256b29ac5b487e317/images/logistics.png)
 
 ---
 
@@ -141,7 +141,7 @@ Análise de performance logística, incluindo prazo médio de entrega, pedidos a
 
 Análise de clientes únicos, clientes recorrentes, distribuição das avaliações, taxa de comentários e satisfação por status de entrega.
 
-![Customers & Reviews](https://github.com/ppossidio/olist-ecommerce-analytics/blob/main/images/customers_reviews.png)
+![Customers & Reviews](https://github.com/ppossidio/olist-ecommerce-analytics/blob/1ccb3098af0aebf4583ceea256b29ac5b487e317/images/customers_reviews.png)
 
 ---
 
@@ -149,7 +149,7 @@ Análise de clientes únicos, clientes recorrentes, distribuição das avaliaç�
 
 Análise de performance dos vendedores, concentração de receita, receita por estado do vendedor, taxa de atraso por seller e prazo médio de entrega por estado.
 
-![Sellers](https://github.com/ppossidio/olist-ecommerce-analytics/blob/main/images/sellers.png)
+![Sellers](https://github.com/ppossidio/olist-ecommerce-analytics/blob/1ccb3098af0aebf4583ceea256b29ac5b487e317/images/sellers.png)
 
 ---
 
@@ -157,7 +157,7 @@ Análise de performance dos vendedores, concentração de receita, receita por e
 
 Página final com principais achados, riscos de negócio e recomendações estratégicas.
 
-![Final Insights](https://github.com/ppossidio/olist-ecommerce-analytics/blob/main/images/final_insights.png)
+![Final Insights](https://github.com/ppossidio/olist-ecommerce-analytics/blob/1ccb3098af0aebf4583ceea256b29ac5b487e317/images/final_insights.png)
 
 ---
 
