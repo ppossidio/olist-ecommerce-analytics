@@ -1,26 +1,26 @@
 # Olist E-commerce Analytics
 
-Projeto completo de análise de dados utilizando **Python, MySQL e Power BI** para analisar vendas, logística, clientes, avaliações e vendedores de um marketplace brasileiro de e-commerce.
+End-to-end data analytics project using **Python, MySQL and Power BI** to analyze sales, logistics, customers, reviews and seller performance in a Brazilian e-commerce marketplace.
 
 ---
 
-## Objetivo do Projeto
+## Project Objective
 
-O objetivo deste projeto foi simular um fluxo real de análise de dados, partindo de arquivos CSV brutos até a construção de um dashboard analítico no Power BI.
+The objective of this project was to simulate a real-world data analytics workflow, starting from raw CSV files and ending with an interactive analytical dashboard in Power BI.
 
-O projeto cobre as seguintes etapas:
+The project covers the following steps:
 
-- Limpeza e preparação dos dados com Python
-- Criação de banco de dados no MySQL
-- Validação de chaves e relacionamentos com SQL
-- Modelagem dimensional para Power BI
-- Criação de medidas DAX
-- Desenvolvimento de dashboard interativo
-- Geração de insights e recomendações de negócio
+- Data cleaning and preparation with Python
+- MySQL database creation
+- Primary key and relationship validation with SQL
+- Dimensional modeling for Power BI
+- DAX measure creation
+- Interactive dashboard development
+- Business insights and strategic recommendations
 
 ---
 
-## Ferramentas Utilizadas
+## Tools Used
 
 - Python
 - Pandas
@@ -32,7 +32,7 @@ O projeto cobre as seguintes etapas:
 
 ---
 
-## Estrutura do Projeto
+## Project Structure
 
 ```text
 olist-ecommerce-analytics/
@@ -53,7 +53,7 @@ olist-ecommerce-analytics/
 │   └── 04_powerbi_views.sql
 │
 ├── powerbi/
-│   └── > The Power BI file is available upon request due to GitHub file size limitations.
+│   └── Power BI file available upon request
 │
 ├── images/
 │   ├── executive_overview.png
@@ -66,145 +66,181 @@ olist-ecommerce-analytics/
 └── README.md
 ```
 
-Etapas do Projeto
-1. Preparação dos Dados com Python
+---
 
-A primeira etapa foi realizada em Python com a biblioteca Pandas.
+## Project Steps
 
-Foram feitas análises iniciais das tabelas, verificação de valores nulos, duplicidades, tipos de dados e criação de novas colunas analíticas.
+### 1. Data Preparation with Python
 
-Algumas colunas criadas:
+The first step was performed using Python and the Pandas library.
 
-delivery_time_days
-delivery_delay_days
-delivery_status
-is_late
-item_total_value
-product_volume_cm3
-has_review_comment
-2. Carga e Modelagem no MySQL
+The raw datasets were inspected to understand table structures, missing values, duplicated records, data types and business relationships.
 
-Após a limpeza, os dados foram carregados no MySQL.
+Several analytical columns were created to support the SQL model and Power BI dashboard.
 
-Foram criadas tabelas staging e views analíticas para organizar o modelo de dados antes da conexão com o Power BI.
+Examples of created columns:
 
-Também foram feitas validações de:
+- `delivery_time_days`
+- `delivery_delay_days`
+- `delivery_status`
+- `is_late`
+- `item_total_value`
+- `product_volume_cm3`
+- `has_review_comment`
 
-Chaves primárias
-Chaves compostas
-Relacionamentos entre tabelas
-Quantidade de registros
-Consistência entre receita de itens e pagamentos
-3. Modelagem para Power BI
+---
 
-A camada final para o Power BI foi estruturada com tabelas de dimensão e fato:
+### 2. Data Loading and Modeling with MySQL
 
-dim_customers
-dim_sellers
-dim_products
-fact_orders
-fact_order_items
-fact_payments_by_order
-fact_reviews_by_order
+After the cleaning process, the processed datasets were loaded into MySQL.
 
-Essa estrutura permitiu criar um modelo mais organizado, evitando duplicidades e facilitando a criação das medidas DAX.
+Staging tables and analytical views were created to organize the data before connecting it to Power BI.
 
-## Dashboard Power BI
+Several validations were performed, including:
 
-O dashboard foi dividido em seis páginas principais.
+- Primary key validation
+- Composite key validation
+- Relationship validation between tables
+- Row count validation
+- Consistency checks between item revenue and payment values
+
+---
+
+### 3. Power BI Data Model
+
+The final analytical layer for Power BI was structured using dimension and fact tables:
+
+- `dim_customers`
+- `dim_sellers`
+- `dim_products`
+- `fact_orders`
+- `fact_order_items`
+- `fact_payments_by_order`
+- `fact_reviews_by_order`
+
+This structure allowed a cleaner model, reduced duplication risks and made DAX measure creation more reliable.
+
+---
+
+## Power BI Dashboard
+
+The dashboard was divided into six analytical pages.
+
+## Power BI File
+
+The `.pbix` file is not included in this repository due to GitHub file size limitations.
+
+The dashboard can be reviewed through the screenshots available in the `images/` folder.
+
+The Power BI file is available upon request.
+
+## Live Dashboard
+
+The interactive Power BI dashboard is available at the link below:
+
+[Open Power BI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiYjJiYWQyZjItNjYxYS00Yjg1LWJmNjYtNGQ4NzI2MTkxNGVhIiwidCI6ImFlMTA1MWE2LWE0NzYtNGJkYi04OTFhLWMwOWVhYmQ5ZjZlYSJ9))
 
 ---
 
 ### Executive Overview
 
-Visão geral de receita, pedidos, ticket médio, itens entregues, avaliação média, prazo médio, taxa de atraso e taxa de entrega.
+High-level view of revenue, orders, average ticket, delivered items, average review score, average delivery time, late rate and delivery rate.
 
-![Executive Overview](https://github.com/ppossidio/olist-ecommerce-analytics/blob/1ccb3098af0aebf4583ceea256b29ac5b487e317/images/executive_overview.png) 
+![Executive Overview](./images/executive_overview.png)
 
 ---
 
 ### Sales & Products
 
-Análise de receita por categoria, produtos mais vendidos, preço médio, frete médio e participação do frete por categoria.
+Analysis of product revenue, category performance, top products, average item price, average freight and freight share by category.
 
-![Sales & Products](https://github.com/ppossidio/olist-ecommerce-analytics/blob/1ccb3098af0aebf4583ceea256b29ac5b487e317/images/sales_products.png)
+![Sales & Products](./images/sales_products.png)
 
 ---
 
 ### Logistics
 
-Análise de performance logística, incluindo prazo médio de entrega, pedidos atrasados, taxa de atraso por categoria e impacto da entrega na avaliação dos clientes.
+Operational analysis of delivery performance, including average delivery time, late orders, late rate by category, delays by state and the impact of delivery status on customer reviews.
 
-![Logistics](https://github.com/ppossidio/olist-ecommerce-analytics/blob/1ccb3098af0aebf4583ceea256b29ac5b487e317/images/logistics.png)
+![Logistics](./images/logistics.png)
 
 ---
 
 ### Customers & Reviews
 
-Análise de clientes únicos, clientes recorrentes, distribuição das avaliações, taxa de comentários e satisfação por status de entrega.
+Analysis of unique customers, repeat customers, review score distribution, comment rate and customer satisfaction by delivery status.
 
-![Customers & Reviews](https://github.com/ppossidio/olist-ecommerce-analytics/blob/1ccb3098af0aebf4583ceea256b29ac5b487e317/images/customers_reviews.png)
+![Customers & Reviews](./images/customers_reviews.png)
 
 ---
 
 ### Sellers
 
-Análise de performance dos vendedores, concentração de receita, receita por estado do vendedor, taxa de atraso por seller e prazo médio de entrega por estado.
+Seller performance analysis, including revenue concentration, seller states, seller late rate and average delivery time by seller state.
 
-![Sellers](https://raw.githubusercontent.com/ppossidio/olist-ecommerce-analytics/refs/heads/main/images/sellers.png)
+![Sellers](./images/sellers.png)
 
 ---
 
 ### Final Insights
 
-Página final com principais achados, riscos de negócio e recomendações estratégicas.
+Final page summarizing the main findings, business risks and strategic recommendations.
 
-![Final Insights](https://github.com/ppossidio/olist-ecommerce-analytics/blob/1ccb3098af0aebf4583ceea256b29ac5b487e317/images/final_insights.png)
+![Final Insights](./images/final_insights.png)
 
 ---
 
-Principais Insights
+## Key Business Insights
 
-Alguns dos principais insights encontrados:
+Some of the main insights identified in the analysis:
 
-A receita está concentrada em poucas categorias e estados de vendedores.
-As categorias Health & Beauty, Watches & Gifts e Bed/Bath/Table são os principais motores de receita.
-A performance logística tem forte impacto na satisfação dos clientes.
-Pedidos atrasados ou não entregues possuem notas médias significativamente menores.
-Clientes insatisfeitos tendem a deixar comentários com mais frequência.
-Alguns vendedores com alta receita também apresentam variação relevante na taxa de atraso.
-O peso do frete varia bastante por categoria e deve ser monitorado na estratégia comercial.
-Recomendações de Negócio
+1. Revenue is concentrated in a few product categories and seller states.
+2. Health & Beauty, Watches & Gifts and Bed/Bath/Table are the main revenue drivers.
+3. Logistics performance has a strong impact on customer satisfaction.
+4. Late and not delivered orders have significantly lower average review scores.
+5. Dissatisfied customers are more likely to leave written comments.
+6. Some high-revenue sellers also show relevant variation in late delivery rates.
+7. Freight share varies significantly by category and should be monitored as part of the commercial and logistics strategy.
 
-Com base na análise, as principais recomendações são:
+---
 
-Priorizar melhorias logísticas em categorias e estados com maior taxa de atraso.
-Monitorar vendedores de alta receita que também apresentam maior taxa de atraso.
-Fortalecer categorias com alta receita e boa satisfação dos clientes.
-Investigar comentários negativos para identificar problemas recorrentes.
-Usar a participação do frete por categoria para apoiar decisões de preço e estratégia logística.
-Competências Demonstradas
+## Business Recommendations
 
-Este projeto demonstra conhecimentos em:
+Based on the analysis, the main recommendations are:
 
-Limpeza de dados com Python
-Manipulação de dados com Pandas
-Banco de dados MySQL
-Consultas SQL
-Modelagem dimensional
-Power BI
-DAX
-Criação de dashboards
-Storytelling com dados
-Geração de insights de negócio
-Status do Projeto
+1. Prioritize logistics improvements in categories and states with higher late rates.
+2. Monitor high-revenue sellers that also show higher late delivery rates.
+3. Strengthen commercial focus on high-revenue categories with strong customer satisfaction.
+4. Investigate negative reviews with written comments to identify recurring operational issues.
+5. Use freight share by category to support pricing and shipping strategy decisions.
 
-Projeto concluído.
+---
 
-Possíveis melhorias futuras:
+## Skills Demonstrated
 
-Análise de cohort de clientes
-Segmentação de vendedores
-Previsão de atrasos
-Análise de sentimento dos comentários
-Publicação do dashboard no Power BI Service
+This project demonstrates practical experience in:
+
+- Data cleaning with Python
+- Data manipulation with Pandas
+- MySQL database modeling
+- SQL queries and validation
+- Dimensional modeling
+- Power BI dashboard development
+- DAX measure creation
+- Data storytelling
+- Business-oriented analysis
+- Portfolio project documentation
+
+---
+
+## Project Status
+
+Project completed.
+
+Possible future improvements:
+
+- Customer cohort analysis
+- Seller segmentation
+- Late delivery prediction
+- Sentiment analysis on review comments
+- Dashboard publication in Power BI Service
