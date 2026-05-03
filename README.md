@@ -53,7 +53,7 @@ olist-ecommerce-analytics/
 │   └── 04_powerbi_views.sql
 │
 ├── powerbi/
-│   └── olist_ecommerce_analytics.pbix
+│   └── > The Power BI file is available upon request due to GitHub file size limitations.
 │
 ├── images/
 │   ├── executive_overview.png
